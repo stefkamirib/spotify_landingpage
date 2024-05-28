@@ -1,8 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 :root {
     --branco-principal: #FFFFFF;
     --preto-principal: #000000;
     --cinza-secundario: #121212;
-
+    --font-principal: "Roboto Slab"
 }
 
 body {
@@ -25,39 +28,76 @@ body {
 
 .sidebar nav ul {
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 0;
 
 }
 
 .sidebar li {
-    padding: 10px 0;
+    padding: 12px;
 }
 
 .sidebar nav ul li a {
     color: var(--branco-principal);
-    font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     text-decoration: none;
+    font-family: var(--font-principal);
+    font-weight: 400;
 }
 
-.spotify-logo {
-    width: 250px;
+
+.spotify__logo {
     background: var(--cinza-secundario);
     border-radius: 8px;
+    margin-top: 10px;
 }
 
-.spotify-logo img {
+.spotify__logo img {
     width: 100px;
-    padding: 0 12px
+    padding: 12px
+
 }
 
-.homepage img {
-    width: 22px;
+.biblioteca {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--cinza-secundario);
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+
+    font-family: var(--font-principal);
+    color: var(--branco-principal);
+    font-weight: 300;
+    
 }
 
-.search img {
-    width: 22px;
+.biblioteca .biblioteca__content {
+    display: flex;
+    justify-content: space-between;
+
 }
 
+.biblioteca .biblioteca__btn {
+    display: flex;
+    margin-right: 10px;
+    background-color: transparent;
+    color: var(--branco-principal);
+    border: 0px;
+    font-size: 1em;
+    font-family: var(--font-principal);
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+    
+}
 
+.biblioteca .biblioteca__btn .fa {
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: 200;
+}
+
+.biblioteca .biblioteca__content .fa-plus {
+    margin: 24px 24px;
+}
