@@ -1,11 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --branco-principal: #FFFFFF;
     --preto-principal: #000000;
     --cinza-secundario: #121212;
-    --font-principal: "Roboto Slab"
+    --cinza-claro: #242424;
+    --verde-principal: #1db954;
+    --font-principal: "Nunito";
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 
 .sidebar nav ul {
     list-style-type: none;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 10px 0;
 
 }
@@ -39,10 +41,10 @@ body {
 
 .sidebar nav ul li a {
     color: var(--branco-principal);
-    font-size: 17px;
+    font-size: 16px;
     text-decoration: none;
     font-family: var(--font-principal);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 
@@ -64,11 +66,11 @@ body {
     flex-direction: column;
     background-color: var(--cinza-secundario);
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    padding: 16px 0 0 0px;
 
     font-family: var(--font-principal);
     color: var(--branco-principal);
-    font-weight: 300;
+    font-weight: 500;
     
 }
 
@@ -80,7 +82,7 @@ body {
 
 .biblioteca .biblioteca__btn {
     display: flex;
-    margin-right: 10px;
+    margin-left: 10px;
     background-color: transparent;
     color: var(--branco-principal);
     border: 0px;
@@ -89,6 +91,7 @@ body {
     text-decoration: none;
     text-transform: none;
     padding: 20px 10px;
+    cursor: pointer;
     
 }
 
@@ -100,4 +103,91 @@ body {
 
 .biblioteca .biblioteca__content .fa-plus {
     margin: 24px 24px;
+}
+
+.section__playlist {
+    display: flex;
+    width: 280px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px; /*espaço entre os elementos*/
+    background-color: var(--cinza-claro);
+    font-size: 17px;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.section__playlist .section__playlist__content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.section__playlist__content span{
+    padding-bottom: 10px;
+}
+
+.section__playlist__content .text__title {
+    font-weight: 700;
+    font-family: var(--font-principal);
+    color: var(--verde-principal);
+}
+
+.section__playlist__content .sub__title {
+    font-weight: 400;
+    font-size: 13px;
+    font-family: var(--font-principal);
+}
+
+.section__playlist__content .btn__section_playlist {
+    display: flex;
+    justify-content: center;
+    background-color: var(--verde-principal);
+    color: var(--preto-principal);
+    border-radius: 20px;
+    border: 0;
+    font-size: 13px;
+    height: 30px;
+    font-family: var(--font-principal);
+    font-weight: 480;
+    text-decoration: none;
+    padding: 5px;
+    width: 120px;
+    margin-top: 15px;
+    margin-left: -5px;
+}
+
+.sidebar .cookies {
+    margin-top: 15px;
+    margin-left: 13px;
+}
+
+.sidebar .cookies a {
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
+
+.languages {
+    margin: 5px;
+}
+
+.languages .btn__languages{
+    background-color: transparent;
+    border: 1px solid #878787;
+    border-radius: 10px;
+    color: var(--branco-principal);
+    cursor: pointer;
+    align-items: center;
+    width: 130px;
+    height: 30px;
+    margin: 10px 5px;
+    
 }
