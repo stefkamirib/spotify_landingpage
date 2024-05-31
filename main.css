@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --preto-principal: #000000;
+    --cinza-secundario: #121212;
+    --cinza-claro: #242424;
+    --color-btn-subscribe: #a7a7a7;
+    --verde-principal: #1db954;
+    --font-principal: "Nunito";
+}
+
+/*Header*/
+
+.main__container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--cinza-claro);
+}
+
+.header__navigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header__navigation .navigation .arrow__left {
+    margin-right: 0.5rem;
+}
+
+.header__navigation .navigation .arrow__left img {
+    width: 16px;
+    height: 16px;
+}
+
+.header__navigation .navigation .arrow__right img {
+    width: 16px;
+    height: 16px;
+}
+
+.arrow__left, .arrow__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--cinza-secundario);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 38px;
+    margin-left: 80px;
+    background-color: var(--cinza-secundario);
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header__search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__search input {
+    background-color: transparent;
+    border: none;
+    width: 260px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; /*permite o input continuar em uma linha apenas*/
+    outline: none;
+}
+
+.header__login {
+    margin-left: 370px;
+}
+
+.header__login .subscribe {
+    color: var(--color-btn-subscribe);
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    margin-right: 20px;
+
+}
+
+.header__login .login {
+    background-color: var(--verde-principal);
+    color: var(--branco-principal);
+    width: 100px;
+    height: 42px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+
+}
